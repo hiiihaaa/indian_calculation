@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <button><%= link_to "次へ", root_path %></button>
+    <button id="answer_btn">回答</button>
+
+
+    <table class="calc_wrapper">
+      <tbody>
+        <tr>
+          <td><%= @a %></td>
+          <td><%= @b %></td>
+          <td>✖️</td>
+          <td><%= @c %></td>
+          <td><%= @d %></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="answer">
+      <div>回答：<%= (@a*10+@b)*(@c*10+@d)%></div>
+      <div><%= "type-#{@type}： #{@fomula}" %></div>
+      <div><%= "=> #{@answer}" %><div>
+    </div>
+  </div>
+
+</div>
